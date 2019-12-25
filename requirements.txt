@@ -1,0 +1,9 @@
+requests==2.20.0
+python-dateutil==2.7.3
+eventlet==0.24.1
+pyyaml==5.1.2
+loguru==0.3.2
+pandas==0.25.3
+xlrd==1.2.0
+psycopg2-binary==2.7.5
+
