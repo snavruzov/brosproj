@@ -7,7 +7,7 @@ import sys
 from loguru import logger
 
 from parse_excel import make_migrate, lead_checkout, get_last_stop_pk, \
-    get_lead, get_cnt_lead_sent, reset_lead_sent
+    get_lead, get_cnt_lead_sent, reset_lead_sent, read_xls
 
 logger.add(sys.stderr, format="{time} {level} {message}",
            filter="my_module", level="DEBUG")
@@ -213,6 +213,6 @@ def get_data():
 
 if __name__ == '__main__':
     #make_migrate()
-    cron_job(time() + 5, time() + 604800, 1800, get_data)
-    #read_xls('junks_for_sardor.xlsx')
+    #cron_job(time() + 5, time() + 604800, 1800, get_data)
+    read_xls('junks_for_sardor.xlsx')
     #app.run()
